@@ -1,0 +1,21 @@
+<%= form_for @artist do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :album %>
+    <%= f.text_field :album %>
+  </p>
+  <p>
+    <%= f.submit 'Add artist' %>
+  </p>
+<% end %>
+
+<%= @artists.each do |artist| %>
+<ul>
+  <li>
+    <%= artist.name %>, <%= artist.album %>
+  </li>
+</ul>
+<% end %>
