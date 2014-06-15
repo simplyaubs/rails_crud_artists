@@ -8,14 +8,6 @@
     <%= f.text_field :album %>
   </p>
   <p>
-    <%= f.submit 'Add artist' %>
+    <%= f.submit 'Update artist' %>
   </p>
-<% end %>
-
-<%= @artists.each do |artist| %>
-<ul>
-  <li>
-    <%= link_to "#{artist.name}", artist_path(artist) %>, <%= artist.album %>
-  </li>
-</ul>
 <% end %>
